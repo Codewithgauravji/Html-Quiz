@@ -1,0 +1,99 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: aquamarine;
+}
+
+.main {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.box {
+    width: 80%; /* Default to a narrower width */
+    max-width: 500px; /* Prevent it from growing too large on wider screens */
+    height: auto; /* Allow height to adjust based on content */
+    box-shadow: 0px 0px 10px gray;
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.row {
+    width: 100%;
+    margin: 2rem;
+    margin-left: 0%;
+}
+
+.btn {
+    width: 100%;
+    padding: 10px; /* Increase padding for better touch target */
+    background-color: aquamarine;
+    font-size: 20px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.like img {
+    height: 50px;
+    width: 50px;
+}
+
+h3 {
+    color: black;
+    font-size: 20px;
+}
+
+#likeCount {
+    height: 3px;
+}
+img{
+    height: 200px;
+    width: 400px;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .box {
+        width: 90%; /* Wider for smaller screens */
+    }
+    
+    .btn {
+        font-size: 18px; /* Adjust button font size */
+    }
+    
+    h3 {
+        font-size: 18px; /* Adjust header font size */
+    }
+    img{
+        height: 200px;
+        width: 300px;
+    }
+}
+
+@media (max-width: 480px) {
+    .box {
+        width: 95%; /* Full width on very small screens */
+    }
+    
+    .btn {
+        font-size: 16px; /* Slightly smaller font size */
+    }
+    
+    h3 {
+        font-size: 16px; /* Smaller header font */
+    }
+    img{
+        height: 200px;
+        width: 300px;
+    }
+}
